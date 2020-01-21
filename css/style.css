@@ -7,6 +7,7 @@
 }
 html {
   height: 100%;
+  font-size: 14px;
 }
 body {
   margin: 0;
@@ -14,7 +15,6 @@ body {
   min-height: 100%;
   background-color: #fff;
   font-family: "Noto Sans JP", sans-serif;
-  font-size: 14px;
   line-height: 20px;
   color: #333;
   border-left: solid 56px #fff;
@@ -118,6 +118,7 @@ footer #footer_box_3 {
     clear: both;
 }
 div#intro {
+    font-family: 'Signika', sans-serif;
     width: 95%;
     margin: 0 2.5%;
     height: 800px;
@@ -129,12 +130,12 @@ div#intro #intro_box_2 {
     float: left;
 }
 div#intro #intro_box_1 {
-    font-size: 100px;
-    line-height: 100px;
+    font-size: 10rem;
+    line-height: 10rem;
 }
 div#intro #intro_box_2 {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 2rem;
+    line-height: 3rem;
 }
 /* On screens that are 992px or less, set the background color to blue */
 @media screen and (max-width: 1024px) {
