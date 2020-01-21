@@ -1,0 +1,144 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: default;
+  
+}
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background-color: #fff;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333;
+  border-left: solid 56px #fff;
+  border-right: solid 56px #fff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+h1 {
+  font-size: 38px;
+  line-height: 44px;
+  margin-top: 20px;
+}
+h2 {
+  font-size: 32px;
+  line-height: 36px;
+  margin-top: 20px;
+}
+h3 {
+  font-size: 24px;
+  line-height: 30px;
+  margin-top: 20px;
+}
+h4 {
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 10px;
+}
+h5 {
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 10px;
+}
+h6 {
+  font-size: 12px;
+  line-height: 18px;
+  margin-top: 10px;
+}
+div {
+    border: inset 1px black;
+  }
+header {
+    width: 95%;
+    margin: 0 2.5%;
+}
+#welle_logo {
+  width: 100px;
+}
+
+
+.product_box {
+    position: relative;
+    width: 20%;
+    height: 34vw;
+    float: left;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-bottom: 5vw;
+}
+.product_box img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.product_text {
+    position: absolute;
+    width: 100%;
+    height: 19vw;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+}
+.product_title {
+    width: 100%;
+}
+.product_description {
+    width: 100%;
+}
+footer {
+    transform: translateX(-56px);
+    clear: both;
+    width: calc(100% + 112px);
+    height: 500px;
+    padding: 0 calc(2.5% + 56px);
+    background-color:rgb(22, 22, 22);
+    color: white;
+}
+footer #footer_box_1,
+footer #footer_box_2 {
+    width: 50%;
+    float: left;
+}
+footer #footer_box_3 {
+    clear: both;
+}
+div#intro {
+    width: 95%;
+    margin: 0 2.5%;
+    height: 800px;
+}
+div#intro #intro_box_1,
+div#intro #intro_box_2 {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+div#intro #intro_box_1 {
+    font-size: 100px;
+    line-height: 100px;
+}
+div#intro #intro_box_2 {
+    font-size: 30px;
+    line-height: 40px;
+}
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 1024px) {
+  body {
+    background-color: rgb(255, 238, 164);
+  }
+}
