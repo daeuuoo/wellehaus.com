@@ -88,22 +88,6 @@ if ($_POST) {
             });
         });
     </script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#do-you-agree').change(function() {
-                var isChecked = $("#do-you-agree").is(":checked");
-                if(isChecked){
-                    console.log(isChecked);
-                    $('#submit-form').attr("disabled", false);
-                } else {
-                    console.log(isChecked);
-                    $('#submit-form').attr("disabled", true);
-                }
-
-            });
-        });
-    </script>
-
 
     <div id="contact-us">
         <form action="/contact.php" method="POST">
@@ -176,7 +160,7 @@ if ($_POST) {
 
             </p>
 
-            <input type="submit" id="submit-form" value="문의하기" disabled>
+            <input type="submit" id="submit-form" value="문의하기">
 
         </form>
 
