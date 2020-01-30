@@ -3,7 +3,6 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   cursor: default;
-  
 }
 html {
   height: 100%;
@@ -60,86 +59,106 @@ h6 {
   margin-top: 10px;
 }
 div {
-    border: inset 1px black;
-  }
+  border: inset 1px black;
+}
 header {
-    width: 95%;
-    margin: 0 2.5%;
+  width: 95%;
+  margin: 0 2.5%;
 }
 #welle_logo {
   width: 100px;
 }
 
-
+#product_section {
+  overflow: auto;
+  margin-top: 5vw;
+}
 .product_box {
-    position: relative;
-    width: 20%;
-    height: 34vw;
-    float: left;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
-    margin-bottom: 5vw;
+  position: relative;
+  width: 20%;
+  height: 34vw;
+  float: left;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin-bottom: 5vw;
 }
 .product_box img {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .product_text {
-    position: absolute;
-    width: 100%;
-    height: 19vw;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 19vw;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
 }
 .product_title {
-    width: 100%;
+  width: 100%;
 }
 .product_description {
-    width: 100%;
+  width: 100%;
 }
 footer {
-    transform: translateX(-56px);
-    clear: both;
-    width: calc(100% + 112px);
-    height: 500px;
-    padding: 0 calc(2.5% + 56px);
-    background-color:rgb(22, 22, 22);
-    color: white;
+  transform: translateX(-56px);
+  clear: both;
+  width: calc(100% + 112px);
+  height: 500px;
+  padding: 0 calc(2.5% + 56px);
+  background-color: rgb(22, 22, 22);
+  color: white;
 }
 footer #footer_box_1,
 footer #footer_box_2 {
-    width: 50%;
-    float: left;
+  width: 50%;
+  float: left;
+}
+footer #footer_box_2 {
+  font-size: 2vw;
+  line-height: 3vw;
+  font-family: "Signika", sans-serif;
 }
 footer #footer_box_3 {
-    clear: both;
+  clear: both;
+  text-align: center;
+  font-size: 0.8rem;
 }
 div#intro {
-    font-family: 'Signika', sans-serif;
-    width: 95%;
-    margin: 0 2.5%;
-    height: 800px;
+  font-family: "Signika", sans-serif;
+  width: 95%;
+  margin: 0 2.5%;
+  height: 800px;
 }
 div#intro #intro_box_1,
 div#intro #intro_box_2 {
-    width: 50%;
-    height: 100%;
-    float: left;
+  width: 50%;
+  height: 100%;
+  float: left;
 }
 div#intro #intro_box_1 {
-    font-size: 10rem;
-    line-height: 10rem;
+  font-size: 10vw;
+  line-height: 10vw;
 }
 div#intro #intro_box_2 {
-    font-size: 2rem;
-    line-height: 3rem;
+  font-size: 2vw;
+  line-height: 3vw;
 }
 /* On screens that are 992px or less, set the background color to blue */
 @media screen and (max-width: 1024px) {
   body {
     background-color: rgb(255, 238, 164);
   }
+}
+
+/* contact form */
+.input-box,
+#welle-privacy-policy {
+  width: 500px;
+}
+#welle-privacy-policy {
+  height: 130px;
+  overflow-y: scroll;
 }
