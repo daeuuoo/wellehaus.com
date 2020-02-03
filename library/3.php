@@ -1,7 +1,4 @@
 <?php
-require 'vendor/autoload.php';
-
-$Parsedown = new Parsedown();
-
-echo $Parsedown->text('Hello _Parsedown_!'); 
+$lang = $_GET['lang'];
+echo $lang;
 ?>

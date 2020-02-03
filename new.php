@@ -1,39 +1,17 @@
 <!DOCTYPE html>
-<!-- Last Published: jan 20 2020 -->
+<?php include '_last.php'; ?>
 <html>
 
 <head>
-    <meta charset="utf-8" />
-    <title>wellehaus as a title</title>
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <meta property="og:title" content="welle[vέlǝ] as a og_title">
-    <meta property="og:url" content="www.wellehaus.com">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="http://www.wellehaus.com/image/og_image.jpg">
-    <meta property="og:site_name" content="welle[vέlǝ] as a og_site_name">
-    <meta property="og:description" content="welle[vέlǝ] as a og_description">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="welle[vέlǝ] as a twitter_title">
-    <meta name="twitter:description" content="welle[vέlǝ] as a description">
-    <meta name="twitter:image" content="http://www.wellehaus.com/image/og_image.jpg">
-    <link href="https://fonts.googleapis.com/css?family=Signika&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montez" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:300&subset=japanese" rel="stylesheet">
-    <link href="./css/style.css" rel="stylesheet" type="text/css" />
-    <link href="https://daks2k3a4ib2z.cloudfront.net/img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <?php include '_head.php'; ?>
 </head>
 
 <body id="body">
     <nav>
-        <ul>
-            <li>menu1</li>
-            <li>menu2</li>
-            <li>menu3</li>
-        </ul>
+        <?php include '_nav.php'; ?>
     </nav>
-
     <header id="header">
-        <img id="welle_logo" src="./image/welle.svg" alt="welle">
+        <?php include '_header.php'; ?>
     </header>
     <div id="intro">
         <div id="intro_box_1">
@@ -101,34 +79,10 @@
                 <div class="product_description">설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명</div>
             </div>
         </div>
-
     </div>
-
     <footer>
-        <div id="footer_box_1">
-            <img id="welle_logo" src="./image/welle_white.svg" alt="welle">
-            
-        </div>
-        <div id="footer_box_2">
-            Electronics R&D and ODM<br>
-            Development and Manufacturing of AV/IT Products<br>
-            Import/distribution of household/home appliances/IT gadgets
-        </div>
-        <div id="footer_box_3">
-            <div>
-                #1602, 49, Achasan-ro, Seongdong-gu, Seoul, Republic of Korea (04790)
-            </div>
-            <div>
-                Copyright © 2020 welle CO., LTD All rights reserved.
-            </div>
-            <div>
-                Privacy Policy
-            </div>
-        </div>
+        <?php include '_footer.php'; ?>
     </footer>
-
-    <script src="./js/jquery-3.3.1.min.js" type="text/javascript"></script>
-    <script src="./js/mellow.js" type="text/javascript"></script>
 </body>
 
 </html>
