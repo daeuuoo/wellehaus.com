@@ -1,5 +1,4 @@
 <ul>
-    <li>menu1</li>
-    <li>menu2</li>
-    <li>menu3</li>
+    <li><a href="/new">home</a></li>
+    <li><a href="/contact">contact</a></li>
 </ul>

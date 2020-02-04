@@ -31,49 +31,49 @@
     </div>
     <div id="product_section">
         <div class="product_box">
-            <img src="./image/sample1.jpg" alt="">
+            <img src="./image/product/sample1.jpg" alt="">
             <div class="product_text">
                 <div class="product_title">상품명1</div>
                 <div class="product_description">설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명</div>
             </div>
         </div>
         <div class="product_box">
-            <img src="./image/sample2.jpg" alt="">
+            <img src="./image/product/sample2.jpg" alt="">
             <div class="product_text">
                 <div class="product_title">상품명2</div>
                 <div class="product_description">설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명</div>
             </div>
         </div>
         <div class="product_box">
-            <img src="./image/sample3.png" alt="">
+            <img src="./image/product/sample3.png" alt="">
             <div class="product_text">
                 <div class="product_title">상품명3</div>
                 <div class="product_description">설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명</div>
             </div>
         </div>
         <div class="product_box">
-            <img src="./image/sample1.jpg" alt="">
+            <img src="./image/product/sample1.jpg" alt="">
             <div class="product_text">
                 <div class="product_title">상품명3</div>
                 <div class="product_description">설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명</div>
             </div>
         </div>
         <div class="product_box">
-            <img src="./image/sample2.jpg" alt="">
+            <img src="./image/product/sample2.jpg" alt="">
             <div class="product_text">
                 <div class="product_title">상품명4</div>
                 <div class="product_description">설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명</div>
             </div>
         </div>
         <div class="product_box">
-            <img src="./image/sample3.png" alt="">
+            <img src="./image/product/sample3.png" alt="">
             <div class="product_text">
                 <div class="product_title">상품명5</div>
                 <div class="product_description">설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명</div>
             </div>
         </div>
         <div class="product_box">
-            <img src="./image/sample1.jpg" alt="">
+            <img src="./image/product/sample1.jpg" alt="">
             <div class="product_text">
                 <div class="product_title">상품명6</div>
                 <div class="product_description">설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명</div>

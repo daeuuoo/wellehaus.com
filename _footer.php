@@ -1,5 +1,5 @@
 <div id="footer_box_1">
-    <img id="welle_logo" src="./image/welle_white.svg" alt="welle">
+    <img id="welle_logo" src="./image/ci/welle_white.svg" alt="welle">
 </div>
 <div id="footer_box_2">
     Electronics R&D and ODM<br>

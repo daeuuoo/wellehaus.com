@@ -1,1 +1,1 @@
-<img id="welle_logo" src="./image/welle.svg" alt="welle">
+<img id="welle_logo" src="./image/ci/welle.svg" alt="welle">
