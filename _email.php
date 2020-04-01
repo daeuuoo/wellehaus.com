@@ -3,7 +3,7 @@ error_reporting(E_ALL);
 ini_set("display_errors", 1);
 
 require_once 'library/vendor/autoload.php';
-require_once '_credential.php';
+require_once '_credential_smtp.php';
 
 // Sanitize Post Data
 $category = filter_var($_POST['category'], FILTER_SANITIZE_STRING);

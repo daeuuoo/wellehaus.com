@@ -1,5 +1,5 @@
+<?php include '_last_modified_date.php'; ?>
 <!DOCTYPE html>
-<?php include '_last.php'; ?>
 <html>
 
 <head>
@@ -24,61 +24,38 @@
             </p>
             <p>
                 welle plan and introduce various categories of living products that increase the quality of living space
-                and
-                add daily sensibilities.
+                and add daily sensibilities.
             </p>
         </div>
     </div>
     <div id="product_section">
-        <div class="product_box">
-            <img src="./image/product/sample1.jpg" alt="">
-            <div class="product_text">
-                <div class="product_title">상품명1</div>
-                <div class="product_description">설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명</div>
+        <?php
+        // include '_select_product_db.php';
+
+        // while ($row = mysqli_fetch_assoc($result)) {
+        //     echo '<div class="product_box">';
+        //     echo '<img src="' . $row['thumbnail_url'] . '" alt="">';
+        //     echo '<div class="product_text">';
+        //     echo '<div class="product_title">' . $row['model_name'] . '</div>';
+        //     echo '<div class="product_description">' . $row['description'] . '</div>';
+        //     echo '</div></div>';
+        // }
+
+        for ($count = 1; $count <= 11; $count++) {
+        ?>
+            <div class="product_box">
+                <img src="./image/product/sample1.jpg" alt="">
+                <div class="product_text">
+                    <div class="product_title">sample</div>
+                    <div class="product_description">description</div>
+                </div>
             </div>
-        </div>
-        <div class="product_box">
-            <img src="./image/product/sample2.jpg" alt="">
-            <div class="product_text">
-                <div class="product_title">상품명2</div>
-                <div class="product_description">설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명</div>
-            </div>
-        </div>
-        <div class="product_box">
-            <img src="./image/product/sample3.png" alt="">
-            <div class="product_text">
-                <div class="product_title">상품명3</div>
-                <div class="product_description">설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명</div>
-            </div>
-        </div>
-        <div class="product_box">
-            <img src="./image/product/sample1.jpg" alt="">
-            <div class="product_text">
-                <div class="product_title">상품명3</div>
-                <div class="product_description">설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명</div>
-            </div>
-        </div>
-        <div class="product_box">
-            <img src="./image/product/sample2.jpg" alt="">
-            <div class="product_text">
-                <div class="product_title">상품명4</div>
-                <div class="product_description">설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명</div>
-            </div>
-        </div>
-        <div class="product_box">
-            <img src="./image/product/sample3.png" alt="">
-            <div class="product_text">
-                <div class="product_title">상품명5</div>
-                <div class="product_description">설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명</div>
-            </div>
-        </div>
-        <div class="product_box">
-            <img src="./image/product/sample1.jpg" alt="">
-            <div class="product_text">
-                <div class="product_title">상품명6</div>
-                <div class="product_description">설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명</div>
-            </div>
-        </div>
+        <?php
+        }
+        ?>
+
+
+
     </div>
     <footer>
         <?php include '_footer.php'; ?>

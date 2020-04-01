@@ -1,0 +1,35 @@
+<?php
+    $lang_array = array (
+        "language" => "日本語",
+        "og_title" => "welle[vέlǝ] as a og_title",
+        "og:site_name" => "welle[vέlǝ] as a og_site_name",
+        "og:description" => "welle[vέlǝ] as a og_description",
+        "twitter:title" => "welle[vέlǝ] as a twitter_title",
+        "twitter:description" => "welle[vέlǝ] as a description",
+        "nav_menu_1" => "ホーム",
+        "nav_menu_2" => "コンタクト",
+        "nav_menu_3" => "ダウンロード",
+        "intro_title" => "wave",
+        "intro_content_1" => "welle[:velle] is a total lifestyle brand that offers living products that combine smart technology, the
+        sensibility given by nature, while studying the lifestyle of people who change to rhythmic feeling.",
+        "intro_content_2" => "welle plan and introduce various categories of living products that increase the quality of living space
+        and add daily sensibilities.",
+        "address" => "#1602, 49, Achasan-ro, Seongdong-gu, Seoul, Republic of Korea (04790)",
+        "policy" => "プライバシーポリシー",
+        "email_contact" => "メールアドレス",
+        "category" => "お取合わせ種別",
+        "select_category" => "選択してください",
+        "partnership" => "提携について",
+        "product_inquiry" => "プロダクトについて",
+        "product_service" => "サービスについて",
+        "purchase_date" => "製品購入日",
+        "others" => "その他",
+        "name" => "氏名",
+        "email" => "メールアドレス",
+        "title" => "お取合わせ件名",
+        "content" => "お取り合わせ内容",
+        "agree" => "個人情報の収集および取り扱いについて",
+        "are_you_agree" => "個人情報の収集および取り扱いに同意します",
+        "send" => "お取合わせ転送",
+    );
+?>

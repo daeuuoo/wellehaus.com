@@ -1,3 +1,4 @@
+<?php include '_last_modified_date.php'; ?>
 <?php
 define('SITE_KEY', '6Ld2u9MUAAAAADJuWJv1ygNbSRQExhiGA0WYyXvj');
 define('SECRET_KEY', '6Ld2u9MUAAAAACFDWRvSJm7PmR_2icTJRafK-kf_');
@@ -19,7 +20,6 @@ if ($_POST) {
 }
 ?>
 <!DOCTYPE html>
-<?php include '_last.php'; ?>
 <html>
 
 <head>
@@ -37,8 +37,11 @@ if ($_POST) {
     <script type="text/javascript">
         $(document).ready(function() {
             $('#category').change(function() {
-                var selectedText = $("#category option:selected").text();
-                if (selectedText == '제품서비스문의') {
+                var e = document.getElementById("category");
+                var selectedValue = e.options[e.selectedIndex].value;
+
+                console.log(selectedValue);
+                if (selectedValue == 'service') {
                     // document.getElementById('#date').
                     $('#date-form').css("display", "block");
                     var today = new Date();
@@ -52,8 +55,8 @@ if ($_POST) {
                         mm = '0' + mm
                     }
                     today = yyyy + '-' + mm + '-' + dd;
-                    $('#date').attr("max", today);
                     $('#date').attr("required", true);
+                    $('#date').attr("max", today);
 
                 } else {
                     $('#date').attr("required", false);
@@ -65,39 +68,39 @@ if ($_POST) {
     </script>
     <div id="contact-form-boxz">
         <form id="contact-form" action="/contact.php" method="POST">
-            <div>이메일 문의</div>
+            <div><?php echo $lang_array['email_contact'] ?></div>
             <p>
-                <label for="category">카테고리</label><br>
+                <label for="category"><?php echo $lang_array['category'] ?></label><br>
                 <select class="input-box" id="category" name="category" required>
-                    <option selected disabled>카테고리 선택</option>
-                    <option value="alliance">제휴</option>
-                    <option value="product">제품관련문의</option>
-                    <option value=" service">제품서비스문의</option>
-                    <option value="other">기타</option>
+                    <option selected disabled><?php echo $lang_array['select_category'] ?></option>
+                    <option value="alliance"><?php echo $lang_array['partnership'] ?></option>
+                    <option value="product"><?php echo $lang_array['product_inquiry'] ?></option>
+                    <option value="service"><?php echo $lang_array['product_service'] ?></option>
+                    <option value="other"><?php echo $lang_array['others'] ?></option>
                 </select>
             </p>
             <p id="date-form" style="display: none;">
-                <label for="date">제품구매일</label><br>
+                <label for="date"><?php echo $lang_array['purchase_date'] ?></label><br>
                 <input type="date" class="input-box" id="date" name="date" min="2016-01-01" max="2030-12-31">
             </p>
             <p>
-                <label for="your-name">성명</label><br>
+                <label for="your-name"><?php echo $lang_array['name'] ?></label><br>
                 <input type="text" class="input-box" id="your-name" name="your-name" value="" required>
             </p>
             <p>
-                <label for="your-email">이메일</label><br>
+                <label for="your-email"><?php echo $lang_array['email'] ?></label><br>
                 <input type="email" class="input-box" id="your-email" name="your-email" placeholder="input@your.email" value="" required>
             </p>
             <p>
-                <label for="your-title">제목</label><br>
+                <label for="your-title"><?php echo $lang_array['title'] ?></label><br>
                 <input type="text" class="input-box" id="your-title" name="your-title" value="" required>
             </p>
             <p>
-                <label for="your-content">내용</label><br>
+                <label for="your-content"><?php echo $lang_array['content'] ?></label><br>
                 <textarea class="input-box" id="your-content" name="your-content" rows="10" required></textarea>
             </p>
             <p>
-                <div>개인정보 수집 및 이용 동의</div>
+                <div><?php echo $lang_array['agree'] ?></div>
                 <div id="welle-privacy-policy">
                     1. 개인정보의 수집 항목<br>
                     주식회사 벨레(이하 '회사'라 합니다)는 Contact 서비스 이용을 위해 아래와 같은 개인정보를 수집하고 있습니다.<br>
@@ -128,10 +131,10 @@ if ($_POST) {
                     고객님께서는 정보주체로서 개인정보 동의 거부권이 있으며, 미동의 시 A/S 서비스 신청 및 이용에 제약이 있을 수 있습니다.<br>
                 </div>
                 <input type="checkbox" id="do-you-agree" name="do-you-agree" value="agree" required>
-                <label for="do-you-agree">개인정보 수집 및 이용에 동의합니다.</label>
+                <label for="do-you-agree"><?php echo $lang_array['are_you_agree'] ?></label>
                 <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
             </p>
-            <input type="submit" id="submit-form" value="문의하기">
+            <input type="submit" id="submit-form" value="<?php echo $lang_array['send'] ?>">
             <div id="reCAPTCHAv3">
                 <div>This site is protected by reCAPTCHA and the Google</div>
                 <a href="https://policies.google.com/privacy">Privacy Policy</a> and

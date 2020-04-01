@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="flag-icon-css-jp" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" width="595.281px" height="446.461px" viewBox="0 197.715 595.281 446.461"
+	 enable-background="new 0 197.715 595.281 446.461" xml:space="preserve">
+<g>
+	<defs>
+		<rect id="SVGID_1_" y="197.715" width="595.281" height="446.461"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	<g transform="translate(88 -32)" clip-path="url(#SVGID_2_)">
+		<path fill="#FFFFFF" d="M-125.205,229.715h669.691v446.461h-669.691V229.715z"/>
+		<ellipse fill="#D30000" cx="209.69" cy="452.966" rx="138.778" ry="138.778"/>
+	</g>
+</g>
+</svg>

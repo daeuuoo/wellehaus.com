@@ -75,7 +75,19 @@ header {
 #welle_logo {
   width: 100px;
 }
-
+#lang_list_box_top,
+#lang_list_box_bottom {
+  position: relative;
+  width: 100px;
+}
+#lang_list_top,
+#lang_list_bottom {
+  position: absolute;
+  display: none;
+  margin: 0px;
+  padding: 20px;
+  background-color: rgb(255, 238, 164);
+}
 #product_section {
   overflow: auto;
   margin-top: 5vw;
@@ -183,4 +195,10 @@ form#contact-form {
 
 .grecaptcha-badge {
   opacity: 0;
+}
+
+
+/* support */
+#support {
+  height: 500px;
 }
