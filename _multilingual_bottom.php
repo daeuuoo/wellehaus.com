@@ -15,6 +15,7 @@
 
 <script type="text/javascript">
     var cur_link = document.location.href;
+    cur_link = cur_link.split("#", 1);
     document.getElementById('ko_bottom').setAttribute('href', cur_link);
     document.getElementById('ja_bottom').setAttribute('href', cur_link);
     document.getElementById('en_bottom').setAttribute('href', cur_link);

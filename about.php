@@ -1,5 +1,6 @@
 <?php include '_last_modified_date.php'; ?>
 <?php include '_getcaptcha.php'; ?>
+
 <!DOCTYPE html>
 <html>
 
@@ -15,7 +16,7 @@
     <header id="header">
         <?php include '_header.php'; ?>
     </header>
-    <div id="support">매뉴얼 및 고객에게 필요한 자료를 다운로드할 수 있는 게시판</div>
+    <div id="support">벨레 소개</div>
     <footer>
         <?php include '_footer.php'; ?>
     </footer>

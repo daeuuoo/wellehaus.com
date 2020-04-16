@@ -1,4 +1,4 @@
-CREATE TABLE wellehaus.welle_ko (
+CREATE TABLE wellehaus.welle_product_ko (
     id INT NOT NULL AUTO_INCREMENT,
     model_name VARCHAR(50) NULL DEFAULT NULL,
     product_name VARCHAR(50) NULL DEFAULT NULL,
@@ -23,8 +23,12 @@ CREATE TABLE wellehaus.welle_ko (
     PRIMARY KEY (id)
 ) ENGINE = InnoDB;
 
+
+
+
+
 INSERT INTO
-    welle_ko(
+    welle_product_ko(
         model_name,
         product_name,
         category,
@@ -52,7 +56,7 @@ VALUES
         '6,110,000'
     ) --   플로우
 INSERT INTO
-    welle_ko(
+    welle_product_ko(
         model_name,
         product_name,
         category,
@@ -79,8 +83,141 @@ VALUES
         '2020-02-04',
         '5,110,000'
     ) --   멜로우
+
+
+
+
+
+INSERT INTO
+    welle_product_ja(
+        model_name,
+        product_name,
+        category,
+        title,
+        description,
+        shop_url,
+        detail_url,
+        thumbnail_url,
+        priority,
+        release_date,
+        price
+    )
+VALUES
+    (
+        'WH-AF650',
+        '플로우_일본어',
+        'welle HOME',
+        '대용량 IoT 공기청정기, 플로우',
+        '공기청정 그 본질에 집중한 공기청정기',
+        '/new',
+        '/new',
+        './image/product/sample2.jpg',
+        '2',
+        '2020-02-04',
+        '6,110,000'
+    ) --   플로우
+INSERT INTO
+    welle_product_ja(
+        model_name,
+        product_name,
+        category,
+        title,
+        description,
+        shop_url,
+        detail_url,
+        thumbnail_url,
+        priority,
+        release_date,
+        price
+    )
+VALUES
+    (
+        'WT-W301T',
+        '멜로우_일본어',
+        'welle TOME',
+        '블루투스 스피커 테이블, 멜로우',
+        '공간을 감싸는 360도 사운드 스피커',
+        '/new',
+        '/new',
+        './image/product/sample1.jpg',
+        '2',
+        '2020-02-04',
+        '5,110,000'
+    ) --   멜로우
+
+
+
+
+
+
+
+
+INSERT INTO
+    welle_product_en(
+        model_name,
+        product_name,
+        category,
+        title,
+        description,
+        shop_url,
+        detail_url,
+        thumbnail_url,
+        priority,
+        release_date,
+        price
+    )
+VALUES
+    (
+        'WH-AF650',
+        '플로우_영어',
+        'welle HOME',
+        '대용량 IoT 공기청정기, 플로우',
+        '공기청정 그 본질에 집중한 공기청정기',
+        '/new',
+        '/new',
+        './image/product/sample2.jpg',
+        '2',
+        '2020-02-04',
+        '6,110,000'
+    ) --   플로우
+INSERT INTO
+    welle_product_en(
+        model_name,
+        product_name,
+        category,
+        title,
+        description,
+        shop_url,
+        detail_url,
+        thumbnail_url,
+        priority,
+        release_date,
+        price
+    )
+VALUES
+    (
+        'WT-W301T',
+        '멜로우_영어',
+        'welle TOME',
+        '블루투스 스피커 테이블, 멜로우',
+        '공간을 감싸는 360도 사운드 스피커',
+        '/new',
+        '/new',
+        './image/product/sample1.jpg',
+        '2',
+        '2020-02-04',
+        '5,110,000'
+    ) --   멜로우
+
+
+
+
+
+
+
+
 UPDATE
-    welle_ko
+    welle_product_ko
 SET
     thumbnail_url = './image/product/sample2.jpg'
 WHERE

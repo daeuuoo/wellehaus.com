@@ -30,28 +30,20 @@
     </div>
     <div id="product_section">
         <?php
-        // include '_select_product_db.php';
+        include '_select_products_db.php';
 
-        // while ($row = mysqli_fetch_assoc($result)) {
-        //     echo '<div class="product_box">';
-        //     echo '<img src="' . $row['thumbnail_url'] . '" alt="">';
-        //     echo '<div class="product_text">';
-        //     echo '<div class="product_title">' . $row['model_name'] . '</div>';
-        //     echo '<div class="product_description">' . $row['description'] . '</div>';
-        //     echo '</div></div>';
-        // }
-
-        for ($count = 1; $count <= 11; $count++) {
-        ?>
-            <div class="product_box">
-                <img src="./image/product/sample1.jpg" alt="">
-                <div class="product_text">
-                    <div class="product_title">sample</div>
-                    <div class="product_description">description</div>
-                </div>
-            </div>
-        <?php
+        while ($row = mysqli_fetch_assoc($result)) {
+            echo '<a href="./detail?product='. $row['model_name'] .'">';
+            echo '<div class="product_box">';
+            echo '<img src="' . $row['thumbnail_url'] . '" alt="">';
+            echo '<div class="product_text">';
+            echo '<div class="product_title">' . $row['product_name'] . '</div>';
+            echo '<div class="product_description">' . $row['description'] . '</div>';
+            echo '</div></div>';
+            echo '</a>';
         }
+
+
         ?>
 
 

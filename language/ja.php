@@ -1,14 +1,16 @@
 <?php
     $lang_array = array (
+        "this_lang" => "ja",
         "language" => "日本語",
         "og_title" => "welle[vέlǝ] as a og_title",
         "og:site_name" => "welle[vέlǝ] as a og_site_name",
         "og:description" => "welle[vέlǝ] as a og_description",
         "twitter:title" => "welle[vέlǝ] as a twitter_title",
         "twitter:description" => "welle[vέlǝ] as a description",
-        "nav_menu_1" => "ホーム",
+        "nav_menu_1" => "製品",
         "nav_menu_2" => "コンタクト",
         "nav_menu_3" => "ダウンロード",
+        "nav_menu_4" => "企業紹介",
         "intro_title" => "wave",
         "intro_content_1" => "welle[:velle] is a total lifestyle brand that offers living products that combine smart technology, the
         sensibility given by nature, while studying the lifestyle of people who change to rhythmic feeling.",
